@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA0100000000000000000001 /* DrugInteractionCheckerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0100000000000000000001 /* DrugInteractionCheckerApp.swift */; };
+		BA0100000000000000000002 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0100000000000000000002 /* Medication.swift */; };
+		BA0100000000000000000003 /* InteractionSeverity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0100000000000000000003 /* InteractionSeverity.swift */; };
+		BA0100000000000000000004 /* DrugInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0100000000000000000004 /* DrugInteraction.swift */; };
+		BA0100000000000000000005 /* DrugInteractionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0100000000000000000005 /* DrugInteractionError.swift */; };
+		BA0100000000000000000006 /* RxNavDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0100000000000000000006 /* RxNavDTOs.swift */; };
+		BA0100000000000000000007 /* RxNavResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0100000000000000000007 /* RxNavResponseParser.swift */; };
+		BA0100000000000000000008 /* DrugInteractionAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0100000000000000000008 /* DrugInteractionAPIClient.swift */; };
+		BA0100000000000000000009 /* RxNavDrugInteractionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0100000000000000000009 /* RxNavDrugInteractionClient.swift */; };
+		BA010000000000000000000A /* MockDrugInteractionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA010000000000000000000A /* MockDrugInteractionClient.swift */; };
+		BA010000000000000000000B /* DrugInteractionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA010000000000000000000B /* DrugInteractionViewModel.swift */; };
+		BA010000000000000000000C /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA010000000000000000000C /* Color+Hex.swift */; };
+		BA010000000000000000000D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA010000000000000000000D /* ContentView.swift */; };
+		BA010000000000000000000E /* InformationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA010000000000000000000E /* InformationPage.swift */; };
+		BA010000000000000000000F /* InteractionReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA010000000000000000000F /* InteractionReportView.swift */; };
+		BA0100000000000000000010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0100000000000000000010 /* Assets.xcassets */; };
+		BA0100000000000000000011 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0100000000000000000011 /* Preview Assets.xcassets */; };
+
+		BT0100000000000000000001 /* InteractionResponseParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FT0100000000000000000001 /* InteractionResponseParsingTests.swift */; };
+		BT0100000000000000000002 /* MockDrugInteractionClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FT0100000000000000000002 /* MockDrugInteractionClientTests.swift */; };
+		BT0100000000000000000003 /* DrugInteractionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FT0100000000000000000003 /* DrugInteractionViewModelTests.swift */; };
+		BT0100000000000000000004 /* SeveritySortingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FT0100000000000000000004 /* SeveritySortingTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA0100000000000000000001 /* DrugInteractionCheckerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugInteractionCheckerApp.swift; sourceTree = "<group>"; };
+		FA0100000000000000000002 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		FA0100000000000000000003 /* InteractionSeverity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionSeverity.swift; sourceTree = "<group>"; };
+		FA0100000000000000000004 /* DrugInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugInteraction.swift; sourceTree = "<group>"; };
+		FA0100000000000000000005 /* DrugInteractionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugInteractionError.swift; sourceTree = "<group>"; };
+		FA0100000000000000000006 /* RxNavDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxNavDTOs.swift; sourceTree = "<group>"; };
+		FA0100000000000000000007 /* RxNavResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxNavResponseParser.swift; sourceTree = "<group>"; };
+		FA0100000000000000000008 /* DrugInteractionAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugInteractionAPIClient.swift; sourceTree = "<group>"; };
+		FA0100000000000000000009 /* RxNavDrugInteractionClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxNavDrugInteractionClient.swift; sourceTree = "<group>"; };
+		FA010000000000000000000A /* MockDrugInteractionClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDrugInteractionClient.swift; sourceTree = "<group>"; };
+		FA010000000000000000000B /* DrugInteractionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugInteractionViewModel.swift; sourceTree = "<group>"; };
+		FA010000000000000000000C /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		FA010000000000000000000D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA010000000000000000000E /* InformationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPage.swift; sourceTree = "<group>"; };
+		FA010000000000000000000F /* InteractionReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionReportView.swift; sourceTree = "<group>"; };
+		FA0100000000000000000010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA0100000000000000000011 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+
+		FT0100000000000000000001 /* InteractionResponseParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionResponseParsingTests.swift; sourceTree = "<group>"; };
+		FT0100000000000000000002 /* MockDrugInteractionClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDrugInteractionClientTests.swift; sourceTree = "<group>"; };
+		FT0100000000000000000003 /* DrugInteractionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugInteractionViewModelTests.swift; sourceTree = "<group>"; };
+		FT0100000000000000000004 /* SeveritySortingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeveritySortingTests.swift; sourceTree = "<group>"; };
+
+		PR0100000000000000000001 /* DrugInteractionChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrugInteractionChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		PR0100000000000000000002 /* DrugInteractionCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrugInteractionCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FR0100000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FR0100000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		GP0100000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				GP0100000000000000000002 /* DrugInteractionChecker */,
+				GP0100000000000000000003 /* DrugInteractionCheckerTests */,
+				GP0100000000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		GP0100000000000000000002 /* DrugInteractionChecker */ = {
+			isa = PBXGroup;
+			children = (
+				GP0100000000000000000005 /* App */,
+				GP0100000000000000000006 /* Models */,
+				GP0100000000000000000007 /* Networking */,
+				GP0100000000000000000008 /* ViewModels */,
+				GP0100000000000000000009 /* Views */,
+				FA0100000000000000000010 /* Assets.xcassets */,
+				GP010000000000000000000A /* Preview Content */,
+			);
+			path = DrugInteractionChecker;
+			sourceTree = "<group>";
+		};
+		GP0100000000000000000003 /* DrugInteractionCheckerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FT0100000000000000000001 /* InteractionResponseParsingTests.swift */,
+				FT0100000000000000000002 /* MockDrugInteractionClientTests.swift */,
+				FT0100000000000000000003 /* DrugInteractionViewModelTests.swift */,
+				FT0100000000000000000004 /* SeveritySortingTests.swift */,
+			);
+			path = DrugInteractionCheckerTests;
+			sourceTree = "<group>";
+		};
+		GP0100000000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				PR0100000000000000000001 /* DrugInteractionChecker.app */,
+				PR0100000000000000000002 /* DrugInteractionCheckerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		GP0100000000000000000005 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FA0100000000000000000001 /* DrugInteractionCheckerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		GP0100000000000000000006 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA0100000000000000000002 /* Medication.swift */,
+				FA0100000000000000000003 /* InteractionSeverity.swift */,
+				FA0100000000000000000004 /* DrugInteraction.swift */,
+				FA0100000000000000000005 /* DrugInteractionError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		GP0100000000000000000007 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FA0100000000000000000006 /* RxNavDTOs.swift */,
+				FA0100000000000000000007 /* RxNavResponseParser.swift */,
+				FA0100000000000000000008 /* DrugInteractionAPIClient.swift */,
+				FA0100000000000000000009 /* RxNavDrugInteractionClient.swift */,
+				FA010000000000000000000A /* MockDrugInteractionClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		GP0100000000000000000008 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA010000000000000000000B /* DrugInteractionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		GP0100000000000000000009 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA010000000000000000000C /* Color+Hex.swift */,
+				FA010000000000000000000D /* ContentView.swift */,
+				FA010000000000000000000E /* InformationPage.swift */,
+				FA010000000000000000000F /* InteractionReportView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		GP010000000000000000000A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FA0100000000000000000011 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		NT0100000000000000000001 /* DrugInteractionChecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = XC0100000000000000000001 /* Build configuration list for PBXNativeTarget "DrugInteractionChecker" */;
+			buildPhases = (
+				SO0100000000000000000001 /* Sources */,
+				FR0100000000000000000001 /* Frameworks */,
+				RE0100000000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrugInteractionChecker;
+			productName = DrugInteractionChecker;
+			productReference = PR0100000000000000000001 /* DrugInteractionChecker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		NT0100000000000000000002 /* DrugInteractionCheckerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = XC0100000000000000000002 /* Build configuration list for PBXNativeTarget "DrugInteractionCheckerTests" */;
+			buildPhases = (
+				SO0100000000000000000002 /* Sources */,
+				FR0100000000000000000002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				TD0100000000000000000001 /* PBXTargetDependency */,
+			);
+			name = DrugInteractionCheckerTests;
+			productName = DrugInteractionCheckerTests;
+			productReference = PR0100000000000000000002 /* DrugInteractionCheckerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PJ0100000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					NT0100000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					NT0100000000000000000002 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = NT0100000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = XC0100000000000000000003 /* Build configuration list for PBXProject "DrugInteractionChecker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = GP0100000000000000000001;
+			productRefGroup = GP0100000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				NT0100000000000000000001 /* DrugInteractionChecker */,
+				NT0100000000000000000002 /* DrugInteractionCheckerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		RE0100000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA0100000000000000000011 /* Preview Assets.xcassets in Resources */,
+				BA0100000000000000000010 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		SO0100000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA0100000000000000000001 /* DrugInteractionCheckerApp.swift in Sources */,
+				BA0100000000000000000002 /* Medication.swift in Sources */,
+				BA0100000000000000000003 /* InteractionSeverity.swift in Sources */,
+				BA0100000000000000000004 /* DrugInteraction.swift in Sources */,
+				BA0100000000000000000005 /* DrugInteractionError.swift in Sources */,
+				BA0100000000000000000006 /* RxNavDTOs.swift in Sources */,
+				BA0100000000000000000007 /* RxNavResponseParser.swift in Sources */,
+				BA0100000000000000000008 /* DrugInteractionAPIClient.swift in Sources */,
+				BA0100000000000000000009 /* RxNavDrugInteractionClient.swift in Sources */,
+				BA010000000000000000000A /* MockDrugInteractionClient.swift in Sources */,
+				BA010000000000000000000B /* DrugInteractionViewModel.swift in Sources */,
+				BA010000000000000000000C /* Color+Hex.swift in Sources */,
+				BA010000000000000000000D /* ContentView.swift in Sources */,
+				BA010000000000000000000E /* InformationPage.swift in Sources */,
+				BA010000000000000000000F /* InteractionReportView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		SO0100000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BT0100000000000000000001 /* InteractionResponseParsingTests.swift in Sources */,
+				BT0100000000000000000002 /* MockDrugInteractionClientTests.swift in Sources */,
+				BT0100000000000000000003 /* DrugInteractionViewModelTests.swift in Sources */,
+				BT0100000000000000000004 /* SeveritySortingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		TD0100000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = NT0100000000000000000001 /* DrugInteractionChecker */;
+			targetProxy = CP0100000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		CP0100000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = PJ0100000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = NT0100000000000000000001;
+			remoteInfo = DrugInteractionChecker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin XCBuildConfiguration section */
+		CF0100000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF0100000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF0100000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"DrugInteractionChecker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Drug Interaction Checker";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DrugInteractionChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF0100000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DrugInteractionChecker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Drug Interaction Checker";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DrugInteractionChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF0100000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DrugInteractionCheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrugInteractionChecker.app/DrugInteractionChecker";
+			};
+			name = Debug;
+		};
+		CF0100000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DrugInteractionCheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrugInteractionChecker.app/DrugInteractionChecker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		XC0100000000000000000001 /* Build configuration list for PBXNativeTarget "DrugInteractionChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF0100000000000000000003 /* Debug */,
+				CF0100000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		XC0100000000000000000002 /* Build configuration list for PBXNativeTarget "DrugInteractionCheckerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF0100000000000000000005 /* Debug */,
+				CF0100000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		XC0100000000000000000003 /* Build configuration list for PBXProject "DrugInteractionChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF0100000000000000000001 /* Debug */,
+				CF0100000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = PJ0100000000000000000001 /* Project object */;
+}
